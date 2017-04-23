@@ -1,0 +1,133 @@
+﻿<Window x:Class="SogetiSpain.AdvancedMvvmWorkshop.MemoryLeaksWithEvents.Views.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d"
+        FontSize="14"
+        FontWeight="Bold"
+        Language="es"
+        Title="SOGETI Spain ~ Memory Leaks with Events"
+        Height="350"
+        Width="525">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="150" />
+            <ColumnDefinition Width="10" />
+            <ColumnDefinition Width="150" />
+            <ColumnDefinition Width="10" />
+            <ColumnDefinition Width="150" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="10" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="10" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="10" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="10" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="10" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="10" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="10" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <Label Content="Operación"
+               BorderBrush="Black"
+               BorderThickness="0,0,0,2"
+               Grid.Column="1"
+               Grid.Row="1"
+               HorizontalContentAlignment="Center" />
+        <Label Content="Creados"
+               BorderBrush="Black"
+               BorderThickness="0,0,0,2"
+               Grid.Column="3"
+               Grid.Row="1"
+               HorizontalContentAlignment="Right" />
+        <Label Content="Supervivientes"
+               BorderBrush="Black"
+               BorderThickness="0,0,0,2"
+               Grid.Column="5"
+               Grid.Row="1"
+               HorizontalContentAlignment="Right" />
+
+        <Button Command="{Binding CreateItemsACommand, Mode=OneTime}"
+                Content="Crear 'A'"
+                Grid.Column="1"
+                Grid.Row="3" />
+        <Label Content="{Binding TotalCreatedItemsA, Mode=OneWay}"
+               ContentStringFormat="{}{0:#,##0}"
+               Grid.Column="3"
+               Grid.Row="3"
+               HorizontalContentAlignment="Right" />
+        <Label Content="{Binding TotalStillAliveItemsA, Mode=OneWay}"
+               ContentStringFormat="{}{0:#,##0}"
+               Grid.Column="5"
+               Grid.Row="3"
+               HorizontalContentAlignment="Right" />
+
+        <Button Command="{Binding CreateItemsBCommand, Mode=OneTime}"
+                Content="Crear 'B'"
+                Grid.Column="1"
+                Grid.Row="5" />
+        <Label Content="{Binding TotalCreatedItemsB, Mode=OneWay}"
+               ContentStringFormat="{}{0:#,##0}"
+               Grid.Column="3"
+               Grid.Row="5"
+               HorizontalContentAlignment="Right" />
+        <Label Content="{Binding TotalStillAliveItemsB, Mode=OneWay}"
+               ContentStringFormat="{}{0:#,##0}"
+               Grid.Column="5"
+               Grid.Row="5"
+               HorizontalContentAlignment="Right" />
+
+        <Button Command="{Binding CreatePublishersCommand, Mode=OneTime}"
+                Content="Crear Publicadores"
+                Grid.Column="1"
+                Grid.Row="7" />
+        <Label Content="{Binding TotalCreatedPublishers, Mode=OneWay}"
+               ContentStringFormat="{}{0:#,##0}"
+               Grid.Column="3"
+               Grid.Row="7"
+               HorizontalContentAlignment="Right" />
+        <Label Content="{Binding TotalStillAlivePublishers, Mode=OneWay}"
+               ContentStringFormat="{}{0:#,##0}"
+               Grid.Column="5"
+               Grid.Row="7"
+               HorizontalContentAlignment="Right" />
+
+        <Button Command="{Binding CreateSubscribersCommand, Mode=OneTime}"
+                Content="Crear Subscriptores"
+                Grid.Column="1"
+                Grid.Row="9" />
+        <Label Content="{Binding TotalCreatedSubscribers, Mode=OneWay}"
+               ContentStringFormat="{}{0:#,##0}"
+               Grid.Column="3"
+               Grid.Row="9"
+               HorizontalContentAlignment="Right" />
+        <Label Content="{Binding TotalStillAliveSubscribers, Mode=OneWay}"
+               ContentStringFormat="{}{0:#,##0}"
+               Grid.Column="5"
+               Grid.Row="9"
+               HorizontalContentAlignment="Right" />
+
+        <Border BorderBrush="Black"
+                BorderThickness="0,0,0,2"
+                Grid.Column="1"
+                Grid.ColumnSpan="5"
+                Grid.Row="11" />
+
+        <Button Command="{Binding RecycleCommand, Mode=OneTime}"
+                Content="Reciclar"
+                Grid.Column="1"
+                Grid.Row="13" />
+
+    </Grid>
+</Window>
