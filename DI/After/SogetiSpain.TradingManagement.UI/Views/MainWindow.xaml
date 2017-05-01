@@ -1,0 +1,120 @@
+﻿<Window x:Class="SogetiSpain.TradingManagement.Views.MainWindow"
+        x:ClassModifier="internal"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SogetiSpain.TradingManagement"
+        xmlns:views="clr-namespace:SogetiSpain.TradingManagement.Views"
+        mc:Ignorable="d"
+        Height="350"
+        Title="MainWindow"
+        Width="500"
+        WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="150" />
+            <ColumnDefinition Width="10" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <ContentControl Content="{Binding CurrentView, Mode=OneWay}"
+                        Grid.Column="2"
+                        Grid.Row="0" />
+        <Grid Grid.Column="0"
+              Grid.Row="0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="5" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="5" />
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="5" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="5" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="5" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="5" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="5" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="5" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="5" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="5" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="5" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="5" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="5" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="5" />
+            </Grid.RowDefinitions>
+            <Button Command="{Binding NavigateToCommand, Mode=OneTime}"
+                    CommandParameter="CustomerDetailsView"
+                    Content="Customer Details"
+                    Grid.Column="1"
+                    Grid.Row="1" />
+            <Button Command="{Binding NavigateToCommand, Mode=OneTime}"
+                    CommandParameter="CustomerListView"
+                    Content="Customer List"
+                    FontWeight="Bold"
+                    Foreground="Green"
+                    Grid.Column="1"
+                    Grid.Row="3" />
+            <Button Command="{Binding NavigateToCommand, Mode=OneTime}"
+                    CommandParameter="ProductDetailsView"
+                    Content="Product Details"
+                    Grid.Column="1"
+                    Grid.Row="5" />
+            <Button Command="{Binding NavigateToCommand, Mode=OneTime}"
+                    CommandParameter="ProductListView"
+                    Content="Product List"
+                    Grid.Column="1"
+                    Grid.Row="7" />
+            <Button Command="{Binding NavigateToCommand, Mode=OneTime}"
+                    CommandParameter="ProviderDetailsView"
+                    Content="Provider Details"
+                    Grid.Column="1"
+                    Grid.Row="9" />
+            <Button Command="{Binding NavigateToCommand, Mode=OneTime}"
+                    CommandParameter="ProviderListView"
+                    Content="Provider List"
+                    Grid.Column="1"
+                    Grid.Row="11" />
+            <Button Command="{Binding NavigateToCommand, Mode=OneTime}"
+                    CommandParameter="PurchaseOrderDetailsView"
+                    Content="Purchase Order Details"
+                    Grid.Column="1"
+                    Grid.Row="13" />
+            <Button Command="{Binding NavigateToCommand, Mode=OneTime}"
+                    CommandParameter="PurchaseOrderListView"
+                    Content="Purchase Order List"
+                    Grid.Column="1"
+                    Grid.Row="15" />
+            <Button Command="{Binding NavigateToCommand, Mode=OneTime}"
+                    CommandParameter="SaleOrderDetailsView"
+                    Content="Sale Order Details"
+                    Grid.Column="1"
+                    Grid.Row="17" />
+            <Button Command="{Binding NavigateToCommand, Mode=OneTime}"
+                    CommandParameter="SaleOrderListView"
+                    Content="Sale Order List"
+                    Grid.Column="1"
+                    Grid.Row="19" />
+            <Button Command="{Binding NavigateToCommand, Mode=OneTime}"
+                    CommandParameter="FakeView"
+                    Content="Fake View"
+                    FontWeight="Bold"
+                    Foreground="Red"
+                    Grid.Column="1"
+                    Grid.Row="21"
+                    ToolTip="Don't press this button!!!!" />
+        </Grid>
+    </Grid>
+</Window>
