@@ -5,6 +5,12 @@ VisualStudioVersion = 15.0.26403.3
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SogetiSpain.AdvancedMvvmWorkshop.MemoryLeaksWithEvents", "SogetiSpain.AdvancedMvvmWorkshop.MemoryLeaksWithEvents\SogetiSpain.AdvancedMvvmWorkshop.MemoryLeaksWithEvents.csproj", "{F4A5E641-29DD-4F0C-982A-2C6508D50025}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DependencyInjection-BestPractices", "DependencyInjection-BestPractices", "{FAACC6FA-9B25-4166-91FC-76A6906F36C1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Before", "Before", "{6A6A48F1-675E-4677-83C7-D08E6476117A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SogetiSpain.TradingManagement", "DependencyInjection-BestPractices\Before\SogetiSpain.TradingManagement\SogetiSpain.TradingManagement.csproj", "{2670E790-F9CE-4651-83A4-65938F2782F1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,8 +21,16 @@ Global
 		{F4A5E641-29DD-4F0C-982A-2C6508D50025}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F4A5E641-29DD-4F0C-982A-2C6508D50025}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F4A5E641-29DD-4F0C-982A-2C6508D50025}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2670E790-F9CE-4651-83A4-65938F2782F1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2670E790-F9CE-4651-83A4-65938F2782F1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2670E790-F9CE-4651-83A4-65938F2782F1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2670E790-F9CE-4651-83A4-65938F2782F1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{6A6A48F1-675E-4677-83C7-D08E6476117A} = {FAACC6FA-9B25-4166-91FC-76A6906F36C1}
+		{2670E790-F9CE-4651-83A4-65938F2782F1} = {6A6A48F1-675E-4677-83C7-D08E6476117A}
 	EndGlobalSection
 EndGlobal
