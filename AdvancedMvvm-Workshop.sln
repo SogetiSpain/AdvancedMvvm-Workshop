@@ -9,7 +9,13 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DependencyInjection-BestPra
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Before", "Before", "{6A6A48F1-675E-4677-83C7-D08E6476117A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SogetiSpain.TradingManagement", "DependencyInjection-BestPractices\Before\SogetiSpain.TradingManagement\SogetiSpain.TradingManagement.csproj", "{2670E790-F9CE-4651-83A4-65938F2782F1}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SogetiSpain.TradingManagement", "DI-BestPractices\Before\SogetiSpain.TradingManagement\SogetiSpain.TradingManagement.csproj", "{2670E790-F9CE-4651-83A4-65938F2782F1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Step01", "Step01", "{4A2FEA8E-8A72-4D05-BD64-0F3EFB132063}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SogetiSpain.TradingManagement", "DI-BestPractices\Step01\SogetiSpain.TradingManagement\SogetiSpain.TradingManagement.csproj", "{147B30B7-9063-40A1-B131-E56A007E5CF5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SogetiSpain.TradingManagement.PresentationLogic", "DI-BestPractices\Step01\SogetiSpain.TradingManagement.PresentationLogic\SogetiSpain.TradingManagement.PresentationLogic.csproj", "{677E8072-EDF5-410A-92AC-AE8CFA2A4706}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -25,6 +31,14 @@ Global
 		{2670E790-F9CE-4651-83A4-65938F2782F1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2670E790-F9CE-4651-83A4-65938F2782F1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2670E790-F9CE-4651-83A4-65938F2782F1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{147B30B7-9063-40A1-B131-E56A007E5CF5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{147B30B7-9063-40A1-B131-E56A007E5CF5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{147B30B7-9063-40A1-B131-E56A007E5CF5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{147B30B7-9063-40A1-B131-E56A007E5CF5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{677E8072-EDF5-410A-92AC-AE8CFA2A4706}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{677E8072-EDF5-410A-92AC-AE8CFA2A4706}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{677E8072-EDF5-410A-92AC-AE8CFA2A4706}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{677E8072-EDF5-410A-92AC-AE8CFA2A4706}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -32,5 +46,8 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{6A6A48F1-675E-4677-83C7-D08E6476117A} = {FAACC6FA-9B25-4166-91FC-76A6906F36C1}
 		{2670E790-F9CE-4651-83A4-65938F2782F1} = {6A6A48F1-675E-4677-83C7-D08E6476117A}
+		{4A2FEA8E-8A72-4D05-BD64-0F3EFB132063} = {FAACC6FA-9B25-4166-91FC-76A6906F36C1}
+		{147B30B7-9063-40A1-B131-E56A007E5CF5} = {4A2FEA8E-8A72-4D05-BD64-0F3EFB132063}
+		{677E8072-EDF5-410A-92AC-AE8CFA2A4706} = {4A2FEA8E-8A72-4D05-BD64-0F3EFB132063}
 	EndGlobalSection
 EndGlobal
