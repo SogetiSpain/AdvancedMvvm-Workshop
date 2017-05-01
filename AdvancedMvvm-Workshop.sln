@@ -17,6 +17,14 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SogetiSpain.TradingManageme
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SogetiSpain.TradingManagement.PresentationLogic", "DI-BestPractices\Step01\SogetiSpain.TradingManagement.PresentationLogic\SogetiSpain.TradingManagement.PresentationLogic.csproj", "{677E8072-EDF5-410A-92AC-AE8CFA2A4706}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Step02", "Step02", "{86919BE4-EDED-4FD5-A823-DF0CB6E30C7C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SogetiSpain.TradingManagement.PresentationLogic", "DI-BestPractices\Step02\SogetiSpain.TradingManagement.PresentationLogic\SogetiSpain.TradingManagement.PresentationLogic.csproj", "{4837E5B3-D252-4053-913C-0542596703E1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SogetiSpain.TradingManagement", "DI-BestPractices\Step02\SogetiSpain.TradingManagement\SogetiSpain.TradingManagement.csproj", "{5490636A-E392-47FA-BBAA-7ABBA6F9F6B5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SogetiSpain.TradingManagement.UI", "DI-BestPractices\Step02\SogetiSpain.TradingManagement.UI\SogetiSpain.TradingManagement.UI.csproj", "{621429F4-F5CC-437B-9DEE-E3E78AAAA895}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +47,18 @@ Global
 		{677E8072-EDF5-410A-92AC-AE8CFA2A4706}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{677E8072-EDF5-410A-92AC-AE8CFA2A4706}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{677E8072-EDF5-410A-92AC-AE8CFA2A4706}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4837E5B3-D252-4053-913C-0542596703E1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4837E5B3-D252-4053-913C-0542596703E1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4837E5B3-D252-4053-913C-0542596703E1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4837E5B3-D252-4053-913C-0542596703E1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5490636A-E392-47FA-BBAA-7ABBA6F9F6B5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5490636A-E392-47FA-BBAA-7ABBA6F9F6B5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5490636A-E392-47FA-BBAA-7ABBA6F9F6B5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5490636A-E392-47FA-BBAA-7ABBA6F9F6B5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{621429F4-F5CC-437B-9DEE-E3E78AAAA895}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{621429F4-F5CC-437B-9DEE-E3E78AAAA895}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{621429F4-F5CC-437B-9DEE-E3E78AAAA895}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{621429F4-F5CC-437B-9DEE-E3E78AAAA895}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -49,5 +69,9 @@ Global
 		{4A2FEA8E-8A72-4D05-BD64-0F3EFB132063} = {FAACC6FA-9B25-4166-91FC-76A6906F36C1}
 		{147B30B7-9063-40A1-B131-E56A007E5CF5} = {4A2FEA8E-8A72-4D05-BD64-0F3EFB132063}
 		{677E8072-EDF5-410A-92AC-AE8CFA2A4706} = {4A2FEA8E-8A72-4D05-BD64-0F3EFB132063}
+		{86919BE4-EDED-4FD5-A823-DF0CB6E30C7C} = {FAACC6FA-9B25-4166-91FC-76A6906F36C1}
+		{4837E5B3-D252-4053-913C-0542596703E1} = {86919BE4-EDED-4FD5-A823-DF0CB6E30C7C}
+		{5490636A-E392-47FA-BBAA-7ABBA6F9F6B5} = {86919BE4-EDED-4FD5-A823-DF0CB6E30C7C}
+		{621429F4-F5CC-437B-9DEE-E3E78AAAA895} = {86919BE4-EDED-4FD5-A823-DF0CB6E30C7C}
 	EndGlobalSection
 EndGlobal
