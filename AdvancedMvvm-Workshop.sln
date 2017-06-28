@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.26403.3
+VisualStudioVersion = 15.0.26430.6
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SogetiSpain.AdvancedMvvmWorkshop.MemoryLeaksWithEvents", "SogetiSpain.AdvancedMvvmWorkshop.MemoryLeaksWithEvents\SogetiSpain.AdvancedMvvmWorkshop.MemoryLeaksWithEvents.csproj", "{F4A5E641-29DD-4F0C-982A-2C6508D50025}"
 EndProject
@@ -44,6 +44,10 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SogetiSpain.TradingManagement.UI", "DI\After\SogetiSpain.TradingManagement.UI\SogetiSpain.TradingManagement.UI.csproj", "{51C90AB3-3F1E-4E0D-BAB5-CDAB031A766E}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SogetiSpain.TradingManagement", "DI\After\SogetiSpain.TradingManagement\SogetiSpain.TradingManagement.csproj", "{B8A3186D-101A-4291-9F9B-B75125FA2F0C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "AsynchronousProgramming-BestPractices", "AsynchronousProgramming-BestPractices", "{85D25FCF-9610-4B8C-8331-039DF06148F9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SogetiSpain.AdvancedMvvmWorkShop.AsyncProgrammingConsole", "Async\SogetiSpain.AdvancedMvvmWorkShop.AsyncProgrammingConsole\SogetiSpain.AdvancedMvvmWorkShop.AsyncProgrammingConsole.csproj", "{A74AFF84-D7BA-456F-9DBB-AC7CE6F33A27}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -111,6 +115,10 @@ Global
 		{B8A3186D-101A-4291-9F9B-B75125FA2F0C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B8A3186D-101A-4291-9F9B-B75125FA2F0C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B8A3186D-101A-4291-9F9B-B75125FA2F0C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A74AFF84-D7BA-456F-9DBB-AC7CE6F33A27}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A74AFF84-D7BA-456F-9DBB-AC7CE6F33A27}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A74AFF84-D7BA-456F-9DBB-AC7CE6F33A27}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A74AFF84-D7BA-456F-9DBB-AC7CE6F33A27}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -135,5 +143,6 @@ Global
 		{473D2B23-2027-442F-A9D3-B3BC9A9B3AB8} = {2FF89401-76DE-4F4B-A71F-F95951E39FBD}
 		{51C90AB3-3F1E-4E0D-BAB5-CDAB031A766E} = {2FF89401-76DE-4F4B-A71F-F95951E39FBD}
 		{B8A3186D-101A-4291-9F9B-B75125FA2F0C} = {2FF89401-76DE-4F4B-A71F-F95951E39FBD}
+		{A74AFF84-D7BA-456F-9DBB-AC7CE6F33A27} = {85D25FCF-9610-4B8C-8331-039DF06148F9}
 	EndGlobalSection
 EndGlobal
