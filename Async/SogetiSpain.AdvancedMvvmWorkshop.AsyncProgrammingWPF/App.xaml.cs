@@ -1,13 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Configuration;
-using System.Data;
-using System.Linq;
-using System.Threading.Tasks;
-using System.Windows;
-
+﻿// ----------------------------------------------------------------------------
+// <copyright file="App.xaml.cs" company="SOGETI Spain">
+//     Copyright © 2017 SOGETI Spain. All rights reserved.
+//     Powered by Óscar Fernández González a.k.a. Osc@rNET.
+// </copyright>
+// ----------------------------------------------------------------------------
 namespace SogetiSpain.AdvancedMvvmWorkshop.AsyncProgrammingWPF
 {
+    using System.Windows;
+
     /// <summary>
     /// Lógica de interacción para App.xaml
     /// </summary>

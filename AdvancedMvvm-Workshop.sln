@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.26430.6
+VisualStudioVersion = 15.0.26430.14
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SogetiSpain.AdvancedMvvmWorkshop.MemoryLeaksWithEvents", "SogetiSpain.AdvancedMvvmWorkshop.MemoryLeaksWithEvents\SogetiSpain.AdvancedMvvmWorkshop.MemoryLeaksWithEvents.csproj", "{F4A5E641-29DD-4F0C-982A-2C6508D50025}"
 EndProject
@@ -50,6 +50,12 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SogetiSpain.AdvancedMvvmWorkShop.AsyncProgrammingConsole", "Async\SogetiSpain.AdvancedMvvmWorkShop.AsyncProgrammingConsole\SogetiSpain.AdvancedMvvmWorkShop.AsyncProgrammingConsole.csproj", "{A74AFF84-D7BA-456F-9DBB-AC7CE6F33A27}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SogetiSpain.AdvancedMvvmWorkshop.AsyncProgrammingWPF", "Async\SogetiSpain.AdvancedMvvmWorkshop.AsyncProgrammingWPF\SogetiSpain.AdvancedMvvmWorkshop.AsyncProgrammingWPF.csproj", "{E5991310-E959-44A2-8251-64C6C16D2114}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Commands", "Commands", "{C4F4344B-5938-4862-90E8-C73CA62FAA14}"
+	ProjectSection(SolutionItems) = preProject
+		Cmds\RelayCommand_AvoidMemoryLeaks.cs = Cmds\RelayCommand_AvoidMemoryLeaks.cs
+		Cmds\RelayCommand_JoshSmith.cs = Cmds\RelayCommand_JoshSmith.cs
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
