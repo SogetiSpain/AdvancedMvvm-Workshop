@@ -1,0 +1,43 @@
+﻿<Window x:Class="SogetiSpain.AdvancedMvvmWorkshop.AsyncProgrammingWPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SogetiSpain.AdvancedMvvmWorkshop.AsyncProgrammingWPF"
+        mc:Ignorable="d"
+        Title="MainWindow"
+        Height="350"
+        Width="525">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="15" />
+            <ColumnDefinition Width="Auto" />
+            <ColumnDefinition Width="15" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="15" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="35" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="35" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <Button Command="{Binding ExecuteLongTaskCommand, Mode=OneTime}"
+                Content="Execute Long Task (ViewModel)"
+                Cursor="Hand"
+                Grid.Column="1"
+                Grid.Row="1" />
+        <TextBlock Grid.Column="3"
+                   Grid.Row="1"
+                   Text="{Binding ResultedText, Mode=OneWay}" />
+        <Button Click="OnButtonClick"
+                Content="Execute Long Task (CodeBehind)"
+                Cursor="Hand"
+                Grid.Column="1"
+                Grid.Row="3" />
+        <TextBlock x:Name="ResultedTextBlock"
+                   Grid.Column="3"
+                   Grid.Row="3" />
+    </Grid>
+</Window>
